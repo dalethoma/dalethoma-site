@@ -3,98 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dale Thoma – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <title>Dale Thoma Consulting</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
       background-color: #F9F9F9;
-      font-family: 'Inter', sans-serif;
       color: #1A1A1A;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      border-bottom: 1px solid #E0E0E0;
+    }
+    .logo {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #1A1A1A;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #1A1A1A;
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+    .hero {
+      padding: 6rem 2rem 4rem;
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: left;
+   
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      color: #2B2B2B;
+    }
+    .cta-button {
+      padding: 0.75rem 1.5rem;
+      background-color: #1A1A1A;
+      color: #F9F9F9;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .section {
+      max-width: 960px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    .three-columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 1;
+      background: #F0F0F0;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .quote {
+      text-align: center;
+      font-style: italic;
+      margin: 4rem auto;
+      color: #444;
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+    .testimonial {
+      background: #F0F0F0;
+      margin: 4rem auto;
+      max-width: 800px;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+      font-size: 1rem;
+      color: #2B2B2B;
+    }
+    .blog-preview {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .subtitle {
-      font-size: 1rem;
-      font-weight: 300;
-      color: #777;
-      margin-bottom: 2rem;
-    }
-    .status-message {
-      font-size: 1rem;
-      font-weight: 300;
-      margin-top: 1rem;
-      color: #555;
-    }
-    .progress-container {
-      width: 300px;
-      height: 10px;
-      background-color: #E0E0E0;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    .progress-bar {
-      height: 100%;
-      background-color: #1A1A1A;
-      width: 0%;
-      transition: width 1s ease-in-out;
+    .blog-item {
+      background: #F0F0F0;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     }
     footer {
-      position: absolute;
-      bottom: 2rem;
-      font-size: 0.85rem;
-      color: #888;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888888;
+      border-top: 1px solid #E0E0E0;
     }
   </style>
 </head>
 <body>
-  <h1>Something is taking shape.</h1>
-  <p class="subtitle">We've been quietly working on something for a while.</p>
-  <div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
-  <p class="status-message" id="status">Initializing...</p>
+  <header>
+    <div class="logo">Dale Thoma</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="https://codepen.io/Dale-Thoma/pen/RNNJLdM" target="_blank">Services</a>
+      <a href="#">About</a>
+      <a href="#">Insights</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Finding Clarity in Complexity</h1>
+    <p>Advising organizations and individuals where systems, strategy, and meaning intersect. I help people see clearly, act intentionally, and lead with purpose—especially when the path is unclear.</p>
+    <a class="cta-button" href="https://calendly.com/dalethoma/30min" target="_blank" rel="noopener noreferrer">
+  Book a Discovery Call
+</a>
+  </section>
+
+  <section class="section">
+    <div class="three-columns">
+      <div class="column">
+        <strong>Systems & Strategy</strong>
+        <p>Turn ambiguity into alignment. I help organizations build architecture that supports scalable, intentional execution.</p>
+      </div>
+      <div class="column">
+        <strong>Leadership Coaching</strong>
+        <p>Clarify what matters. I coach individuals navigating transition, burnout, or high-stakes decisions to regain internal clarity.</p>
+      </div>
+      <div class="column">
+        <strong>Org Design & Culture</strong>
+        <p>Design teams that think clearly and move together. Align values, people, and workflows to create sustainable impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>About Dale</h2>
+    <p>I’ve spent over 20 years building technical teams, leading change, and coaching leaders at the intersection of complexity and clarity. I work with people who are ready to see systems, self, and strategy in a new light—so they can lead what’s next with intention, not just momentum.</p>
+  </section>
+
+  <section class="testimonial">
+    <p>“Dale doesn’t just solve the surface problem—he helps you see the whole system clearly and act from that place. His thinking changed how we lead.”<br><br><em>– Head of People Ops, Scaling Tech Company</em></p>
+  </section>
+
+  <section class="section">
+    <h2>Insights</h2>
+    <div class="blog-preview">
+      <div class="blog-item">
+        <strong>Finding Signal in the Noise</strong>
+        <p>When everything feels urgent, clarity is your most strategic asset. Here’s how to design space for better thinking.</p>
+      </div>
+      <div class="blog-item">
+        <strong>Why Systems Fail (and How to See It Coming)</strong>
+        <p>Misalignment and invisible ownership destroy execution. Learn how to surface and structure what matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Let’s Work Together</h2>
+    <p>If you're navigating ambiguity, scaling change, or leading something meaningful, let’s connect. I offer discovery sessions for individuals and organizations looking for a deeper kind of clarity.</p>
+    <a class="cta-button" href="#">Book a Discovery Call</a>
+  </section>
 
   <footer>
-    &copy; 2025 Dale Thoma
+    &copy; 2025 Dale Thoma Consulting — Finding Clarity in Complexity
   </footer>
-
-  <script>
-    const progressBar = document.getElementById('progressBar');
-    const status = document.getElementById('status');
-
-    const statuses = [
-      'Initializing entropy map...',
-      'Interrogating boundary assumptions...',
-      'Sampling decision layers...',
-      'Scanning narrative constraints...',
-      'Testing coherence anchors...',
-      'Triangulating dissonance points...',
-      'Parsing team-level paradox...',
-      'Recalibrating strategic lenses...',
-      'Assessing invisible structures...',
-      'Synchronizing temporal drift...'
-    ];
-
-    let index = 0;
-    function updateProgress() {
-      index = (index + 1) % statuses.length;
-      status.textContent = statuses[index];
-      const fakeProgress = ((Date.now() / (1000 * 60 * 60 * 24)) % 1) * 100; // cycles daily
-      progressBar.style.width = (fakeProgress.toFixed(2)) + '%';
-    }
-
-    updateProgress();
-    setInterval(updateProgress, 12000); // update every 12 seconds (3x slower)
-  </script>
 </body>
 </html>
