@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dale Thoma – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F9F9F9;
+      font-family: 'Inter', sans-serif;
+      color: #1A1A1A;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #777;
+      margin-bottom: 2rem;
+    }
+    .status-message {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      color: #555;
+    }
+    .progress-container {
+      width: 300px;
+      height: 10px;
+      background-color: #E0E0E0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background-color: #1A1A1A;
+      width: 0%;
+      transition: width 1s ease-in-out;
+    }
+    footer {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Something is taking shape.</h1>
+  <p class="subtitle">We've been quietly working on something for a while.</p>
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <p class="status-message" id="status">Initializing...</p>
+
+  <footer>
+    &copy; 2025 Dale Thoma
+  </footer>
+
+  <script>
+    const progressBar = document.getElementById('progressBar');
+    const status = document.getElementById('status');
+
+    const statuses = [
+      'Initializing entropy map...',
+      'Interrogating boundary assumptions...',
+      'Sampling decision layers...',
+      'Scanning narrative constraints...',
+      'Testing coherence anchors...',
+      'Triangulating dissonance points...',
+      'Parsing team-level paradox...',
+      'Recalibrating strategic lenses...',
+      'Assessing invisible structures...',
+      'Synchronizing temporal drift...'
+    ];
+
+    let index = 0;
+    function updateProgress() {
+      index = (index + 1) % statuses.length;
+      status.textContent = statuses[index];
+      const fakeProgress = ((Date.now() / (1000 * 60 * 60 * 24)) % 1) * 100; // cycles daily
+      progressBar.style.width = (fakeProgress.toFixed(2)) + '%';
+    }
+
+    updateProgress();
+    setInterval(updateProgress, 12000); // update every 12 seconds (3x slower)
+  </script>
+</body>
+</html>
